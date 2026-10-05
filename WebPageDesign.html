@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUNY New Paltz</title>
+
+    <style>
+        * {
+            
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero */
+        .hero {
+            height: 500px;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+            ),
+            url("https://images.unsplash.com/photo-1564981797816-1043664bf78d")
+            center/cover;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #e5b94c;
+            color: #222;
+            padding: 13px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background-color: #d3a936;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 10%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* Cards */
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        /* Mobile */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SUNY New Paltz</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="academics.html">Academics</a>
+            <a href="#">Admissions</a>
+            <a href="#">Campus Life</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h1>SUNY New Paltz</h1>
+            <p>Discover your future in the Hudson Valley.</p>
+            <a href="#" class="button">Explore New Paltz</a>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section class="section">
+        <h2>Welcome to SUNY New Paltz</h2>
+
+        <p>
+            SUNY New Paltz is a public university located in the beautiful
+            Hudson Valley of New York. Students can explore a wide range of
+            academic programs, campus activities, and opportunities to grow
+            both inside and outside the classroom.
+        </p>
+    </section>
+
+    <!-- Cards -->
+    <section class="section">
+        <h2>Explore New Paltz</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Academics</h3>
+                <p>
+                    Explore majors, programs, courses, and opportunities
+                    available to SUNY New Paltz students.
+                </p>
+                <br>
+                <a href="academics.html" class="button">Learn More</a>
+            </div>
+
+            <div class="card">
+                <h3>Campus Life</h3>
+                <p>
+                    Get involved with student organizations, events,
+                    athletics, and activities across campus.
+                </p>
+                <br>
+                <a href="#" class="button">Learn More</a>
+            </div>
+
+            <div class="card">
+                <h3>Admissions</h3>
+                <p>
+                    Learn about applying to SUNY New Paltz and becoming
+                    part of the university community.
+                </p>
+                <br>
+                <a href="#" class="button">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>SUNY New Paltz</strong></p>
+        <p>New Paltz, New York</p>
+        <p>© 2026 SUNY New Paltz</p>
+    </footer>
+
+</body>
+</html>

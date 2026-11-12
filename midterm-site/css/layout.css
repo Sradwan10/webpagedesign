@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #555;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+main {
+    padding: 20px;
+}
+
+.layout {
+    display: flex;
+    gap: 20px;
+}
+
+.left {
+    flex: 1;
+}
+
+.middle {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+.left,
+.middle,
+aside {
+    background-color: #eeeeee;
+    padding: 20px;
+}
